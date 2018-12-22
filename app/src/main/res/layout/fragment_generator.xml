@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Thông tin thiết bị lab"
+            android:textSize="25dp"
+            android:id="@+id/text"/>
+
+        <EditText
+            android:id="@+id/etTen"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_below="@+id/text"
+            android:gravity="center"
+            android:hint="Enter Text Here" />
+
+        <EditText
+            android:id="@+id/etSoLuong"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etTen"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:hint="Enter Text Here" />
+
+        <EditText
+            android:id="@+id/etTinhTrang"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etSoLuong"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:hint="Enter Text Here" />
+
+        <EditText
+            android:id="@+id/etNguoiGiu"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etTinhTrang"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:hint="Enter Text Here" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCreate"
+            android:text="GENERATOR"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etNguoiGiu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnCreate" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Save"
+                android:backgroundTint="@color/colorAccent"/>
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Share"
+                android:backgroundTint="@color/design_default_color_primary"/>
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Reset"
+                android:backgroundTint="@color/colorPrimary"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
